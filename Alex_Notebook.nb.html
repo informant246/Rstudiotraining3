@@ -252,9 +252,19 @@ adae
 <p>plotly</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA8LSBnZ3Bsb3QoYWRhZSkgK1xuICBhZXMoeCA9IEFFU0VWLCBmaWxsID0gU0VYLCB3ZWlnaHQgPSBBR0UpICtcbiAgZ2VvbV9iYXIoKSArXG4gIHNjYWxlX2ZpbGxfaHVlKGRpcmVjdGlvbiA9IDEpICtcbiAgdGhlbWVfbWluaW1hbCgpXG5cbmdncGxvdGx5KHApXG5cbmBgYCJ9 -->
+<pre class="r"><code>p &lt;- ggplot(adae) +
+  aes(x = AESEV, fill = SEX, weight = AGE) +
+  geom_bar() +
+  scale_fill_hue(direction = 1) +
+  theme_minimal()
+
+ggplotly(p)
+</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQWxleCdzIE5vdGVib29rIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpTZXR1cAoKYGBge3J9CmxpYnJhcnkocmVhZHIpCmxpYnJhcnkoZ2dwbG90MikKbGlicmFyeShwbG90bHkpCgpgYGAKCkRhdGEKCmBgYHtyfQpsaWJyYXJ5KHJlYWRyKQphZGFlIDwtIHJlYWRfY3N2KCJodHRwczovL3Job2luYy5naXRodWIuaW8vZGF0YS1saWJyYXJ5L2RhdGEvY2xpbmljYWwtdHJpYWxzL2FkYW0vYWRhZS5jc3YiKQphZGFlCgpgYGAKCmRhdGEgdml6CgpgYGB7cn0KZ2dwbG90KGFkYWUpICsKICBhZXMoeCA9IEFFU0VWLCBmaWxsID0gU0VYLCB3ZWlnaHQgPSBBR0UpICsKICBnZW9tX2JhcigpICsKICBzY2FsZV9maWxsX2h1ZShkaXJlY3Rpb24gPSAxKSArCiAgdGhlbWVfbWluaW1hbCgpCmBgYAoKcGxvdGx5CgpgYGB7cn0KCmBgYAo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQWxleCdzIE5vdGVib29rIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpTZXR1cAoKYGBge3J9CmxpYnJhcnkocmVhZHIpCmxpYnJhcnkoZ2dwbG90MikKbGlicmFyeShwbG90bHkpCgpgYGAKCkRhdGEKCmBgYHtyfQpsaWJyYXJ5KHJlYWRyKQphZGFlIDwtIHJlYWRfY3N2KCJodHRwczovL3Job2luYy5naXRodWIuaW8vZGF0YS1saWJyYXJ5L2RhdGEvY2xpbmljYWwtdHJpYWxzL2FkYW0vYWRhZS5jc3YiKQphZGFlCgpgYGAKCmRhdGEgdml6CgpgYGB7cn0KZ2dwbG90KGFkYWUpICsKICBhZXMoeCA9IEFFU0VWLCBmaWxsID0gU0VYLCB3ZWlnaHQgPSBBR0UpICsKICBnZW9tX2JhcigpICsKICBzY2FsZV9maWxsX2h1ZShkaXJlY3Rpb24gPSAxKSArCiAgdGhlbWVfbWluaW1hbCgpCmBgYAoKcGxvdGx5CgpgYGB7cn0KcCA8LSBnZ3Bsb3QoYWRhZSkgKwogIGFlcyh4ID0gQUVTRVYsIGZpbGwgPSBTRVgsIHdlaWdodCA9IEFHRSkgKwogIGdlb21fYmFyKCkgKwogIHNjYWxlX2ZpbGxfaHVlKGRpcmVjdGlvbiA9IDEpICsKICB0aGVtZV9taW5pbWFsKCkKCmdncGxvdGx5KHApCgpgYGAK</div>
 
 
 

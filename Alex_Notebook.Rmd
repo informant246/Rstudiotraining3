@@ -34,5 +34,12 @@ ggplot(adae) +
 plotly
 
 ```{r}
+p <- ggplot(adae) +
+  aes(x = AESEV, fill = SEX, weight = AGE) +
+  geom_bar() +
+  scale_fill_hue(direction = 1) +
+  theme_minimal()
+
+ggplotly(p)
 
 ```
